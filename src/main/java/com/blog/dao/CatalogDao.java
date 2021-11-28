@@ -1,6 +1,6 @@
 package com.blog.dao;
 
-import com.blog.domain.Catalog;
+import com.blog.display.Catalog;
 import org.springframework.stereotype.Repository;
 
 @Repository

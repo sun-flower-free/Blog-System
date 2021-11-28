@@ -1,6 +1,6 @@
 package com.blog.controller;
 
-import com.blog.domain.Article;
+import com.blog.display.Article;
 import com.blog.service.impl.ArticleServiceImpl;
 import com.blog.service.impl.CommentServiceImpl;
 import com.github.pagehelper.PageHelper;

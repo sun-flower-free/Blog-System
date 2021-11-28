@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.blog.dao.CatalogDao" >
-  <resultMap id="BaseResultMap" type="com.blog.domain.Catalog" >
+  <resultMap id="BaseResultMap" type="com.blog.display.Catalog" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="keywords" property="keywords" jdbcType="VARCHAR" />
     <result column="type" property="type" jdbcType="BIT" />
   </resultMap>
-  <resultMap id="ResultMapWithBLOBs" type="com.blog.domain.Catalog" extends="BaseResultMap" >
+  <resultMap id="ResultMapWithBLOBs" type="com.blog.display.Catalog" extends="BaseResultMap" >
     <result column="desci" property="desci" jdbcType="LONGVARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
@@ -28,13 +28,13 @@
     delete from catalog
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.blog.domain.Catalog" >
+  <insert id="insert" parameterType="com.blog.display.Catalog" >
     insert into catalog (id, name, keywords, 
       type, desci)
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{keywords,jdbcType=VARCHAR}, 
       #{type,jdbcType=BIT}, #{desci,jdbcType=LONGVARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.blog.domain.Catalog" >
+  <insert id="insertSelective" parameterType="com.blog.display.Catalog" >
     insert into catalog
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -71,7 +71,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.blog.domain.Catalog" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.blog.display.Catalog" >
     update catalog
     <set >
       <if test="name != null" >
@@ -89,7 +89,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.blog.domain.Catalog" >
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.blog.display.Catalog" >
     update catalog
     set name = #{name,jdbcType=VARCHAR},
       keywords = #{keywords,jdbcType=VARCHAR},
@@ -97,7 +97,7 @@
       desci = #{desci,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.blog.domain.Catalog" >
+  <update id="updateByPrimaryKey" parameterType="com.blog.display.Catalog" >
     update catalog
     set name = #{name,jdbcType=VARCHAR},
       keywords = #{keywords,jdbcType=VARCHAR},

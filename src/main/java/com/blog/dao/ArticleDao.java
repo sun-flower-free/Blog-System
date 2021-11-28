@@ -1,7 +1,6 @@
 package com.blog.dao;
 
-import com.blog.domain.Article;
-import org.apache.ibatis.annotations.Param;
+import com.blog.display.Article;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

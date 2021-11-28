@@ -1,4 +1,4 @@
-package com.blog.domain;
+package com.blog.display;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

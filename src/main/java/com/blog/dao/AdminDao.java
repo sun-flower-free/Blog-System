@@ -1,6 +1,6 @@
 package com.blog.dao;
 
-import com.blog.domain.Admin;
+import com.blog.display.Admin;
 import org.springframework.stereotype.Repository;
 
 @Repository

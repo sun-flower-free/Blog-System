@@ -1,8 +1,7 @@
 package com.blog.service;
 
-import com.blog.domain.Article;
+import com.blog.display.Article;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface ArticleService {

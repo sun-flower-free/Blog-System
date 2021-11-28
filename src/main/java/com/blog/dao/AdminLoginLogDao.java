@@ -1,6 +1,6 @@
 package com.blog.dao;
 
-import com.blog.domain.AdminLoginLog;
+import com.blog.display.AdminLoginLog;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

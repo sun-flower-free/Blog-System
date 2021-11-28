@@ -1,6 +1,6 @@
 package com.blog.controller;
 
-import com.blog.domain.Comment;
+import com.blog.display.Comment;
 import com.blog.service.impl.CommentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -1,6 +1,6 @@
 package com.blog.service;
 
-import com.blog.domain.Comment;
+import com.blog.display.Comment;
 
 import java.util.List;
 
