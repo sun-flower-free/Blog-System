@@ -1,10 +1,10 @@
 package com.blog.dao;
 
-import com.blog.display.Admin;
+import com.blog.transfer.Admin;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AdminDao {
+public interface AdminMapper {
     int deleteByPrimaryKey(Integer id);
 
     int insert(Admin record);

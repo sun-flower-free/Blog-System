@@ -1,6 +1,6 @@
 package com.blog.service;
 
-import com.blog.display.Admin;
+import com.blog.transfer.Admin;
 
 
 

@@ -1,6 +1,6 @@
 package com.blog.service;
 
-import com.blog.display.AdminLoginLog;
+import com.blog.transfer.AdminLoginLog;
 
 import java.util.List;
 

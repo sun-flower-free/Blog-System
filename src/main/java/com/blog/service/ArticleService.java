@@ -1,6 +1,6 @@
 package com.blog.service;
 
-import com.blog.display.Article;
+import com.blog.transfer.Article;
 
 import java.util.List;
 

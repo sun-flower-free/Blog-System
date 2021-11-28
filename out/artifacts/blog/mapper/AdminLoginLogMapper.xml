@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.blog.dao.AdminLoginLogDao" >
-  <resultMap id="BaseResultMap" type="com.blog.display.AdminLoginLog" >
+<mapper namespace="com.blog.dao.AdminLoginMapper" >
+  <resultMap id="BaseResultMap" type="com.blog.transfer.AdminLoginLog" >
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="admin_id" property="adminId" jdbcType="INTEGER" />
     <result column="date" property="date" jdbcType="TIMESTAMP" />
@@ -34,13 +34,13 @@
     delete from admin_login_log
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.blog.display.AdminLoginLog" >
+  <insert id="insert" parameterType="com.blog.transfer.AdminLoginLog" >
     insert into admin_login_log (admin_id, date,
       ip)
     values ( #{adminId,jdbcType=INTEGER}, #{date,jdbcType=TIMESTAMP},
       #{ip,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.blog.display.AdminLoginLog" >
+  <insert id="insertSelective" parameterType="com.blog.transfer.AdminLoginLog" >
     insert into admin_login_log
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -71,7 +71,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.blog.display.AdminLoginLog" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.blog.transfer.AdminLoginLog" >
     update admin_login_log
     <set >
       <if test="adminId != null" >
@@ -86,7 +86,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.blog.display.AdminLoginLog" >
+  <update id="updateByPrimaryKey" parameterType="com.blog.transfer.AdminLoginLog" >
     update admin_login_log
     set admin_id = #{adminId,jdbcType=INTEGER},
       date = #{date,jdbcType=TIMESTAMP},

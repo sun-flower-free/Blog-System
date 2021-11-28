@@ -1,7 +1,7 @@
 package com.blog.service.impl;
 
-import com.blog.dao.AdminLoginLogDao;
-import com.blog.display.AdminLoginLog;
+import com.blog.dao.AdminLoginMapper;
+import com.blog.transfer.AdminLoginLog;
 import com.blog.service.AdminLoginLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,16 +12,16 @@ import java.util.List;
 public class AdminLoginLogServiceImpl implements AdminLoginLogService{
 
     @Autowired
-    public AdminLoginLogDao adminLoginLogDao;
+    public AdminLoginMapper adminLoginMapper;
     public List<AdminLoginLog> selectRencent(Integer adminId) {
-        return adminLoginLogDao.selectRencent(adminId);
+        return adminLoginMapper.selectRencent(adminId);
     }
 
     public int insert(AdminLoginLog adminLoginLog) {
-        return adminLoginLogDao.insert(adminLoginLog);
+        return adminLoginMapper.insert(adminLoginLog);
     }
 
     public int selectCountByAdminId(int adminId) {
-        return adminLoginLogDao.selectCountByAdminId(adminId);
+        return adminLoginMapper.selectCountByAdminId(adminId);
     }
 }

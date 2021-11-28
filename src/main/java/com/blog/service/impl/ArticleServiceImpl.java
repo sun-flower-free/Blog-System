@@ -1,7 +1,7 @@
 package com.blog.service.impl;
 
-import com.blog.dao.ArticleDao;
-import com.blog.display.Article;
+import com.blog.dao.ArticleMapper;
+import com.blog.transfer.Article;
 import com.blog.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,45 +12,45 @@ import java.util.List;
 public class ArticleServiceImpl implements ArticleService{
 
     @Autowired
-    public ArticleDao articleDao;
+    public ArticleMapper articleMapper;
 
     public Article selectById(Integer id) {
-        return articleDao.selectByPrimaryKey(id);
+        return articleMapper.selectByPrimaryKey(id);
     }
 
     public List<Article> queryAll() {
-        return articleDao.queryAll();
+        return articleMapper.queryAll();
     }
 
     public int countAllNum() {
-        return articleDao.countAllNum();
+        return articleMapper.countAllNum();
     }
 
     public boolean updateArticle(Article article) {
-        return articleDao.updateByPrimaryKeySelective(article)>0;
+        return articleMapper.updateByPrimaryKeySelective(article)>0;
     }
 
     public int deleteById(Integer id) {
-        return articleDao.deleteByPrimaryKey(id);
+        return articleMapper.deleteByPrimaryKey(id);
     }
 
     public int selectCount() {
-        return articleDao.countAllNum();
+        return articleMapper.countAllNum();
     }
 
     public List<Article> selectByWord(String word) {
-        return articleDao.selectByWord(word);
+        return articleMapper.selectByWord(word);
     }
 
     public boolean insert(Article article) {
-        return articleDao.insert(article)>0;
+        return articleMapper.insert(article)>0;
     }
 
     public Article selectLastArticle(Integer id) {
-        return articleDao.selectLastArticle(id);
+        return articleMapper.selectLastArticle(id);
     }
 
     public Article selectNextArticle(Integer id) {
-        return articleDao.selectNextArticle(id);
+        return articleMapper.selectNextArticle(id);
     }
 }

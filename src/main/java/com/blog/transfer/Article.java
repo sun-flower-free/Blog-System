@@ -1,4 +1,4 @@
-package com.blog.display;
+package com.blog.transfer;
 
 import lombok.Getter;
 import lombok.Setter;

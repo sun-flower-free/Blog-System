@@ -1,12 +1,12 @@
 package com.blog.dao;
 
-import com.blog.display.Article;
+import com.blog.transfer.Article;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface ArticleDao {
+public interface ArticleMapper {
     int deleteByPrimaryKey(Integer id);
 
     int insert(Article record);

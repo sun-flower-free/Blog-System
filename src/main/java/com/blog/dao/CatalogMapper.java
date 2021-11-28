@@ -1,10 +1,10 @@
 package com.blog.dao;
 
-import com.blog.display.Catalog;
+import com.blog.transfer.Catalog;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CatalogDao {
+public interface CatalogMapper {
     int deleteByPrimaryKey(Integer id);
 
     int insert(Catalog record);

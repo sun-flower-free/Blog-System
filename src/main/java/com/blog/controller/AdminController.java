@@ -1,7 +1,7 @@
 package com.blog.controller;
 
-import com.blog.display.Admin;
-import com.blog.display.AdminLoginLog;
+import com.blog.transfer.Admin;
+import com.blog.transfer.AdminLoginLog;
 import com.blog.service.impl.AdminLoginLogServiceImpl;
 import com.blog.service.impl.ArticleServiceImpl;
 import com.blog.service.impl.CommentServiceImpl;

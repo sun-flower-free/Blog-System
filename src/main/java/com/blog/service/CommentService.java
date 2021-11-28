@@ -1,6 +1,6 @@
 package com.blog.service;
 
-import com.blog.display.Comment;
+import com.blog.transfer.Comment;
 
 import java.util.List;
 

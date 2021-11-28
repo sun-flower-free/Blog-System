@@ -1,12 +1,12 @@
 package com.blog.dao;
 
-import com.blog.display.AdminLoginLog;
+import com.blog.transfer.AdminLoginLog;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface AdminLoginLogDao {
+public interface AdminLoginMapper {
     int deleteByPrimaryKey(Long id);
 
     int insert(AdminLoginLog record);

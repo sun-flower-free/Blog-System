@@ -1,13 +1,13 @@
 package com.blog.dao;
 
-import com.blog.display.Comment;
+import com.blog.transfer.Comment;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface CommentDao {
+public interface CommentMapper {
     int deleteByPrimaryKey(Long id);
 
     int insert(Comment record);
