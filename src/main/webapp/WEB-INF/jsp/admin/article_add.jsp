@@ -27,8 +27,8 @@
     </c:if>
 </div>
 <div class="container">
-    <form action="/admin/article/add/do" method="post">
-        <div class="form-group">
+    <form action="/admin/article/add/do" method="post" accept-charset="UTF-8" onsubmit="document.charset='UTF-8'" >
+        <div class=" form-group">
             <label for="title">文章标题</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="文章标题">
         </div>
@@ -53,7 +53,7 @@
             </div>
             <textarea id="content" name="content" style="display: none"></textarea>
         </div>
-        <input type="submit" value="发表" />
+        <input type="submit" value="发表" id="btn-submit" />
     </form>
 
             <script type="text/javascript">
@@ -67,6 +67,9 @@
                 editor.create()
                 // 初始化 textarea 的值
                 $text1.val(editor.txt.html())
+                $('#btn-submit').on("click", function (){
+                    console.log($text1.val());
+                })
             </script>
 </div>
 </body>

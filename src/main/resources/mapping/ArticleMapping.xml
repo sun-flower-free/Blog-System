@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.blog.dao.ArticleMapper" >
+
   <resultMap id="BaseResultMap" type="com.blog.transfer.Article" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="title" property="title" jdbcType="VARCHAR" />
@@ -11,15 +12,11 @@
     <result column="time" property="time" jdbcType="TIMESTAMP" />
     <result column="catalog_id" property="catalogId" jdbcType="INTEGER" />
   </resultMap>
+
   <resultMap id="ResultMapWithBLOBs" type="com.blog.transfer.Article" extends="BaseResultMap" >
     <result column="content" property="content" jdbcType="LONGVARCHAR" />
   </resultMap>
-  <sql id="Base_Column_List" >
-    id, title, keywords, desci, pic, click, time, catalog_id
-  </sql>
-  <sql id="Blob_Column_List" >
-    content
-  </sql>
+
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     *
@@ -40,7 +37,6 @@
     from article
     where id &gt; #{id,jdbcType=INTEGER} ORDER BY id ASC limit 1;
   </select>
-
 
 
   <select id="selectByWord" resultMap="BaseResultMap" parameterType="java.lang.String" >
@@ -69,10 +65,15 @@
     insert into article (title, keywords,
       desci, pic, time,
       catalog_id, content)
-    values (#{title,jdbcType=VARCHAR}, #{keywords,jdbcType=VARCHAR},
-      #{desci,jdbcType=VARCHAR}, #{pic,jdbcType=VARCHAR}, #{time,jdbcType=TIMESTAMP},
-      #{catalogId,jdbcType=INTEGER}, #{content,jdbcType=LONGVARCHAR})
+    values (#{title,jdbcType=VARCHAR},
+            #{keywords,jdbcType=VARCHAR},
+            #{desci,jdbcType=VARCHAR},
+            #{pic,jdbcType=VARCHAR},
+            #{time,jdbcType=TIMESTAMP},
+            #{catalogId,jdbcType=INTEGER},
+            #{content,jdbcType=LONGVARCHAR})
   </insert>
+
   <insert id="insertSelective" parameterType="com.blog.transfer.Article" >
     insert into article
     <trim prefix="(" suffix=")" suffixOverrides="," >
@@ -134,6 +135,7 @@
       </if>
     </trim>
   </insert>
+
   <update id="updateByPrimaryKeySelective" parameterType="com.blog.transfer.Article" >
     update article
     <set >
@@ -164,18 +166,20 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
+
   <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.blog.transfer.Article" >
     update article
     set title = #{title,jdbcType=VARCHAR},
-      keywords = #{keywords,jdbcType=VARCHAR},
-      desci = #{desci,jdbcType=VARCHAR},
-      pic = #{pic,jdbcType=VARCHAR},
-      click = #{click,jdbcType=INTEGER},
-      time = #{time,jdbcType=TIMESTAMP},
-      catalog_id = #{catalogId,jdbcType=INTEGER},
-      content = #{content,jdbcType=LONGVARCHAR}
+        keywords = #{keywords,jdbcType=VARCHAR},
+        desci = #{desci,jdbcType=VARCHAR},
+        pic = #{pic,jdbcType=VARCHAR},
+        click = #{click,jdbcType=INTEGER},
+        time = #{time,jdbcType=TIMESTAMP},
+        catalog_id = #{catalogId,jdbcType=INTEGER},
+        content = #{content,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
   <update id="updateByPrimaryKey" parameterType="com.blog.transfer.Article" >
     update article
     set title = #{title,jdbcType=VARCHAR},
