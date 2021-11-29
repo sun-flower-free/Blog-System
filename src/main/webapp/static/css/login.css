@@ -13,7 +13,7 @@ a {
 }
 body {
 	/* background: #f6f5f7; */
-	background-image: url(插画.jpg);
+	/*background-image: url(static/images/插画.jpg);*/
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -80,6 +80,8 @@ button.ghost {
 	border-color: #0b6299;
 }
 
+/*
+表单模式已弃用
 form {
 	background-color: #FFFFFF;
 	display: flex;
@@ -90,6 +92,7 @@ form {
 	height: 100%;
 	text-align: center;
 }
+*/
 
 input {
 	background-color: #eee;
@@ -116,6 +119,17 @@ input {
 	top: 0;
 	height: 100%;
 	transition: all 0.6s ease-in-out;
+}
+
+.in-box{
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
 }
 
 .sign-in-container {
@@ -177,8 +191,9 @@ input {
 	background-size: cover;
 	background-position: 0 0; 
 	color: #FFFFFF; */
-	background-color: var(--lightblue);
-	background: url(插画.jpg);
+
+	/*background-color: var(--lightblue);*/
+	/*background: url(static/images/插画.jpg);*/
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
