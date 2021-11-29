@@ -13,7 +13,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog Login</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/web-icon.png" media="screen" />
+        <link rel="shortcut icon" type="image/x-icon" href="static/images/icon.png" media="screen" />
         <link rel="stylesheet" href="static/css/bootstrap.min.css">
         <link rel="stylesheet" href="static/css/login.css">
         <script src="static/js/jquery-3.2.1.min.js"></script>

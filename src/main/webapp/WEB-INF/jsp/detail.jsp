@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>菜菜张 caicaizhang</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/img/web-icon.png" media="screen" />
+    <link rel="shortcut icon" type="image/x-icon" href="static/images/icon.png" media="screen" />
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <meta name="description" content="00后无为青年，后端开发者（学习者），略懂前端, 学生，实习，缺乏社会的毒打">
     <meta name="keywords" content="Java,Spring,个人博客，博客">

@@ -7,6 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <title>博客管理系统</title>
+    <link rel="shortcut icon" type="image/x-icon" href="static/images/icon.png" media="screen" />
     <link rel="stylesheet" href="/css/bootstrap4.0.min.css" >
     <script src="/js/jquery.slim.min.js" ></script>
     <script src="/js/popper.min.js" ></script>
