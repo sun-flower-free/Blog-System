@@ -10,7 +10,9 @@ import org.springframework.stereotype.Service;
 public class AdminServiceImpl implements AdminService{
     @Autowired
     public AdminMapper adminMapper;
-    public Admin getById(Integer id) {
-        return adminMapper.selectByPrimaryKey(id);
+
+    public Admin getByAccount(String account) {
+        System.out.println(account);
+        return adminMapper.selectByPrimaryKey(account);
     }
 }

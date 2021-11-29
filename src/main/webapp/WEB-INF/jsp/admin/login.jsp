@@ -80,7 +80,7 @@
 
         <div class="input-group">
             <span class="input-group-addon">账号</span>
-            <input type="text" class="form-control" name="id" id="adminId">
+            <input type="text" class="form-control" name="id" id="account">
         </div><br/><br/>
         <div class="input-group">
             <span class="input-group-addon">密码</span>
@@ -95,46 +95,49 @@
 
     </div>
     <script>
-
-        $("#adminId").keyup(
-            function () {
-                if(isNaN($("#adminId").val())){
-                    $("#info").text("提示:账号只能为数字");
-                }
-                else {
-                    $("#info").text("");
-                }
-            }
-        )
+        // $("#adminId").keyup(
+        //     function () {
+        //         if(isNaN($("#adminId").val())){
+        //             $("#info").text("提示:账号只能为数字");
+        //         }
+        //         else {
+        //             $("#info").text("");
+        //         }
+        //     }
+        // )
         $("#signInButton").click(function () {
-            if($("#adminId").val()==''&&$("#passwd").val()==''){
-                $("#info").text("提示:账号和密码不能为空");
+            const account = $("#account").val();
+            const password = $("#passwd").val();
+            console.log(account);
+            console.log(password);
+            if(account === '' && password === ''){
+                $("#info").text("账号和密码不能为空");
             }
-            else if ($("#adminId").val()==''){
-                $("#info").text("提示:账号不能为空");
+            else if (account === ''){
+                $("#info").text("账号不能为空");
             }
-            else if($("#passwd").val()==''){
-                $("#info").text("提示:密码不能为空");
+            else if(password === ''){
+                $("#info").text("密码不能为空");
             }
-            else if(isNaN($("#adminId").val())){
-                $("#info").text("提示:账号必须为数字");
-            }
+            // else if(isNaN($("#adminId").val())){
+            //     $("#info").text("提示:账号必须为数字");
+            // }
             else {
                 $.ajax({
                     type: "POST",
                     url: "/api/loginCheck",
                     data: {
-                        id:$("#adminId").val() ,
-                        password: $("#passwd").val()
+                        account: account ,
+                        password: password
                     },
                     dataType: "json",
                     success: function(data) {
-                        if(data.stateCode.trim() == "0") {
-                            $("#info").text("提示:该用户不存在");
-                        } else if(data.stateCode.trim() == "1") {
-                            $("#info").text("提示:密码错误");
-                        } else if(data.stateCode.trim() == "2"){
-                            $("#info").text("提示:登陆成功，跳转中...");
+                        if(data.stateCode.trim() === "0") {
+                            $("#info").text("用户不存在");
+                        } else if(data.stateCode.trim() === "1") {
+                            $("#info").text("密码错误");
+                        } else if(data.stateCode.trim() === "2"){
+                            $("#info").text("登陆成功，跳转中...");
                             window.location.href="/admin/main";
                         }
                     }
