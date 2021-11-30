@@ -313,11 +313,5 @@
         </section>
     </footer>
 
-    <%--<footer id="footer">
-        <div id="footer-wrap">
-            <div class="copyright">&copy;2021 - 2021 BY ZhangYH</div>
-        </div>
-    </footer>--%>
-
 </body>
 </html>
