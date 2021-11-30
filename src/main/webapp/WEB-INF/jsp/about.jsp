@@ -275,21 +275,28 @@
 
         <div id="bg" >
             <p>
-                和所有以梦为马的诗人一样
-                <br>
-                <i>岁月易逝 一滴不剩</i>
+                流光容易把人抛，红了樱桃，绿了芭蕉。
             </p>
         </div>
 
         <div>
             <article class="article">
-                <p>
-                    <br><br><br><br>
-                    <h3>你来人间一趟，你要看看太阳</h3>
-                    <br><br>
-                    <h3>邮箱:<a href="mailto:1793578929@qq.com">1793578929@qq.com</a></h3>
-                    <br><br><br><br>
-                </p>
+                <br><br><br><br>
+                <h3>你来人间一趟，你要看看太阳</h3>
+                <br>
+                <h3>关于博客</h3><br>
+                <h4>
+                    后端基于Spring、Spring MVC、Mybatis搭建<br><br>
+                    前端基于框架bootstrap<br><br>
+                    目前还并不是十分的完善，仍有许多细节需要修改<br><br>
+                    如果有新奇想法或者问题，欢迎qq或者邮箱联系我
+                </h4><br>
+                <h3>邮箱:<a href="mailto:1793578929@qq.com">1793578929@qq.com</a></h3>
+                <br>
+                <h3><i class="fa fa-github" aria-hidden="true"></i>GitHub:<a target="_blank" href="https://github.com/sun-flower-free">sun-flower-free</a></h3>
+                <br>
+                <h3><i class="fa fa-gittip" aria-hidden="true"></i>Gitee:<a target="_blank" href="https://gitee.com/zyh007">zyh</a></h3>
+                <br><br><br><br>
             </article>
         </div>
 
@@ -298,7 +305,10 @@
     <footer id="footer">
         <section id="copyright">
             <p style="font-size: 20px">
-                © 2021 - 2021 BY <a href="/">ZhangYH</a>
+                © 2021 - 2021 Created with <i class="fa fa-heart"></i> by
+                <a target="_blank" href="/">ZhangYH</a>
+                - Read how I created this and how you can join the challenge
+                <a target="_blank" href="https://gitee.com/zyh007/">here</a>.
             </p>
         </section>
     </footer>
