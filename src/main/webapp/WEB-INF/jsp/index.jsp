@@ -59,9 +59,11 @@
                 </div>
             </div>
         </nav>
+
         <main id="content-outer">
             <div class="layout_page" id="content-inner">
                 <div class="aside_content" id="aside_content">
+
                     <div class="card-widget card-info">
                         <div class="card-content">
                             <div class="card-info-avatar is-center">
@@ -88,6 +90,7 @@
                             <div id="hitokoto"></div>
                         </div>
                     </div>
+
                     <div class="card-widget card-announcement">
                         <div class="card-content">
                             <div class="item-headline">
@@ -228,6 +231,7 @@
 
                     </div>
                 </article>
+
             </div>
         </main>
         <footer id="footer">

@@ -5,6 +5,7 @@ import com.blog.transfer.AdminLoginLog;
 import com.blog.service.impl.AdminLoginLogServiceImpl;
 import com.blog.service.impl.ArticleServiceImpl;
 import com.blog.service.impl.CommentServiceImpl;
+import com.blog.transfer.Article;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -47,6 +48,8 @@ public class AdminController {
             int articleCount=articleService.selectCount();
             int commentCount=commentService.countAllNum();
             int loginNum=adminLoginLogService.selectCountByAdminId(admin.getId());
+            List<Article> articles=articleService.queryAll();
+            modelAndView.addObject("articles",articles);
             modelAndView.addObject("clientIp",clientIp);
             modelAndView.addObject("hostIp",hostIp);
             modelAndView.addObject("hostPort",hostPort);

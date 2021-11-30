@@ -78,6 +78,9 @@ public class ArticleController {
     public ModelAndView articleList(@RequestParam(required=true,defaultValue="1") Integer page, @RequestParam(required=false,defaultValue="10") Integer pageSize){
         PageHelper.startPage(page, pageSize);
         List<Article> articles=articleService.queryAll();
+        for(Article i : articles){
+            System.out.println(LocalTime.now()+" [\33[35;2m文章检测\33[m] login account: " + i.toString());
+        }
         PageInfo<Article> pageInfo=new PageInfo<Article>(articles);
         ModelAndView modelAndView=new ModelAndView("/admin/article_list");
         modelAndView.addObject("articles",articles);
