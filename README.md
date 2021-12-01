@@ -1,5 +1,5 @@
 <h1 align="center"> 个人博客系统</h1>
-<h2 align="center"> 基于Spring+Spring MVC+Mybatis(Maven方式构建)</h2>
+<h2 align="center"> 基于Spring+Spring MVC+Mybatis</h2>
 
 <p align="center">
  <a href="https://travis-ci.org/withstars/Blog-System"><img src="https://travis-ci.org/withstars/Blog-System.svg?branch=master" alt="travis-ci"></a>
@@ -10,7 +10,7 @@
 
 ### 如何使用
 ```
-$ git clone https://github.com/withstars/Blog-System
+$ git clone https://github.com/sun-flower-free/Blog-System
 
 $ cd Blog-System
 
@@ -20,14 +20,18 @@ $ mvn clean package
 
 $ mvn clean install
 
-$ mvn jetty:run
+$ mvn tomcat7:run
 
-http://localhost:8080
-http://localhost:8080/admin 
+http://localhost:8088
+http://localhost:8088/admin 
 ```
+
 ### 说明
-1. 如果使用该项目出现问题，请联系我 withstars@126.com
-2. 如果该项目对您有帮助,请star鼓励我
+后端基于Spring、Spring MVC、Mybatis搭建
+前端基于框架bootstrap
+目前还并不是十分的完善，仍有许多细节需要修改
+如果有新奇想法或者问题，欢迎qq或者邮箱联系我: 1793578929@qq.com
+
 ### 截图
 <img src="/preview/1.png">
 <img src="/preview/2.png">

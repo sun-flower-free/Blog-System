@@ -1,11 +1,8 @@
 -- phpMyAdmin SQL Dump
--- version phpStudy 2014
--- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2018 年 03 月 13 日 09:55
+-- 生成日期: 2021 年 11 月 13 日 09:55
 -- 服务器版本: 5.5.53
--- PHP 版本: 5.4.45
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -30,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `id` mediumint(9) NOT NULL AUTO_INCREMENT,
   `username` varchar(30) NOT NULL,
   `password` char(32) NOT NULL,
+  `email` char(30),
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1206227 ;
@@ -39,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
-(10080, '雨云天下', '111111');
+(1, 'admin', '111111', '1793578929@qq.com');
 
 -- --------------------------------------------------------
 
