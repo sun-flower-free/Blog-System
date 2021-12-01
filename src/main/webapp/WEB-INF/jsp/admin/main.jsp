@@ -195,7 +195,7 @@
             Created with <i class="fa fa-heart"></i> by
             <a target="_blank" href="/">ZhangYH</a>
             - Read how I created this and how you can join the challenge
-            <a target="_blank" href="https://gitee.com/zyh007/">here</a>.
+            <a target="_blank" href="https://gitee.com/zyh007/blog-system">here</a>.
         </div>
     </footer>
 
