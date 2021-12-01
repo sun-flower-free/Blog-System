@@ -41,70 +41,67 @@
     </ul>
 </nav>
 <div class="pic_container">
-    <div class="pic_card" style="background-image:url()">
+    <div class="pic_card" style="background-image:url(static/images/us/04.jpg)">
         <div class="pic_content">
             <h2>01</h2>
-            <h3>Card One</h3>
+            <h3>Pic One</h3>
             <p>
-                this is the first test. About how to make a real Glass Morphsim style.
-                I think it will be perfect.
+                为什么不在春天放一把风筝呢？坐在春天刚刚冒出绿色的草地上，吹着揉揉的春风，享受着春日温馨的阳光真的很舒适。
             </p>
-            <a href="#">Read More</a>
+<%--            <a href="#">Read More</a>--%>
         </div>
     </div>
     <div class="pic_card" style="background-image:url(static/images/us/02.jpg)">
         <div class="pic_content">
             <h2>02</h2>
-            <h3>Card Two</h3>
+            <h3>Pic Two</h3>
             <p>
-                this is the first test. About how to make a real Glass Morphsim style.
-                I think it will be perfect.
+                金媒晚会我们第一次组合排练哦！那时我们刚在一起也很温馨，一切都在往好的方向发展呢。
             </p>
-            <a href="#">Read More</a>
-        </div>
-    </div>
-    <div class="pic_card" style="background-image:url(static/images/us/03.jpg)">
-        <div class="pic_content">
-            <h2>03</h2>
-            <h3>Card Three</h3>
-            <p>
-                this is the first test. About how to make a real Glass Morphsim style.
-                I think it will be perfect.
-            </p>
-            <a href="#">Read More</a>
-        </div>
-    </div>
-    <div class="pic_card" style="background-image:url(static/images/us/04.jpg)">
-        <div class="pic_content">
-            <h2>04</h2>
-            <h3>Card Four</h3>
-            <p>
-                this is the first test. About how to make a real Glass Morphsim style.
-                I think it will be perfect.
-            </p>
-            <a href="#">Read More</a>
+<%--            <a href="#">Read More</a>--%>
         </div>
     </div>
     <div class="pic_card" style="background-image:url(static/images/us/05.jpg)">
         <div class="pic_content">
-            <h2>05</h2>
-            <h3>Card Five</h3>
+            <h2>03</h2>
+            <h3>Pic Three</h3>
             <p>
-                this is the first test. About how to make a real Glass Morphsim style.
-                I think it will be perfect.
+                夏天就应该来一场说走就走的旅行，一起坐公交车，来一场公交车旅行，
+                穿过安静的田场，穿过喧嚣的城市，一切都会在窗口中一一闪过。
             </p>
-            <a href="#">Read More</a>
+<%--            <a href="#">Read More</a>--%>
+        </div>
+    </div>
+    <div class="pic_card" style="background-image:url(static/images/us/01.jpg)">
+        <div class="pic_content">
+            <h2>04</h2>
+            <h3>Pic Four</h3>
+            <p>
+                秋天，就应该走在铺满枫叶的树林里，讲一场轰轰烈烈的爱情故事。满目的红色风景无处不
+                流露出烈火般的热情，风吹过发梢，吹动落叶沙沙，仿佛在为我们演奏者秋天的歌。
+            </p>
+<%--            <a href="#">Read More</a>--%>
         </div>
     </div>
     <div class="pic_card" style="background-image:url(static/images/us/06.jpg)">
         <div class="pic_content">
-            <h2>06</h2>
-            <h3>Card Six</h3>
+            <h2>05</h2>
+            <h3>Pic Five</h3>
             <p>
-                this is the first test. About how to make a real Glass Morphsim style.
-                I think it will be perfect.
+                吃剩的伊丽莎白瓜皮没有地方放怎么办？拿来搭积木吧，来看看谁搭的最高，这次我创下了个人最好记录，总共7层！
             </p>
-            <a href="#">Read More</a>
+<%--            <a href="#">Read More</a>--%>
+        </div>
+    </div>
+    <div class="pic_card" style="background-image:url(static/images/us/07.jpg)">
+        <div class="pic_content">
+            <h2>06</h2>
+            <h3>Pic Six</h3>
+            <p>
+                西塔的小巷里有着很浓郁的民族氛围，西塔是沈阳市朝鲜族的聚集地区，里面有许多的
+                朝鲜特色美食，我们哪天刚从朝鲜超市出来，转过路口就发现了这里，是一处适合拍照的好地点。
+            </p>
+<%--            <a href="#">Read More</a>--%>
         </div>
     </div>
 </div>
