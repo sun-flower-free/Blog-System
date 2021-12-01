@@ -236,7 +236,12 @@
         </main>
         <footer id="footer">
             <div id="footer-wrap">
-                <div class="copyright">&copy;2021 - 2021 BY ZhangYH</div>
+                <div class="copyright">
+                &copy;2021 - 2021 Created with <i class="fa fa-heart"></i> by
+                <a target="_blank" href="/">ZhangYH</a>
+                - Read how I created this and how you can join the challenge
+                <a target="_blank" href="https://gitee.com/zyh007/">here</a>.
+                </div>
             </div>
         </footer>
     </div>

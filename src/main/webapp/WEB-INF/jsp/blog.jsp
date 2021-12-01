@@ -300,7 +300,10 @@
     <footer id="footer">
         <section id="copyright">
             <p style="font-size: 20px">
-                &copy;2021 - 2021 BY <a href="/">ZhangYH</a>
+                &copy;2021 - 2021 Created with <i class="fa fa-heart"></i> by
+                <a target="_blank" href="/">ZhangYH</a>
+                - Read how I created this and how you can join the challenge
+                <a target="_blank" href="https://gitee.com/zyh007/">here</a>.
             </p>
         </section>
     </footer>
